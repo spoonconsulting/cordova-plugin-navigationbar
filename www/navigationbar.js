@@ -17,5 +17,14 @@ module.exports = {
             'hideNavigationBar',
             []
         ); 
+    },
+    hasSoftKeyBar: function(successCallback, errorCallback) {
+        cordova.exec(
+            successCallback,
+            errorCallback,
+            'NavigationBar',
+            'hasSoftKeyBar',
+            []
+        ); 
     }
 };
